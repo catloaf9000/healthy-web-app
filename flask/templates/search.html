@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}Healhy web-app - test{% endblock %}
+
+{% block content %}
+    <h1>This is a simple test of food search form Food Data Center</h1>
+    <h3>For more info about FDC, visit:</h3>
+    <a href="https://fdc.nal.usda.gov/" style="color:whitesmoke;">https://fdc.nal.usda.gov/</a>
+    <table class="table-search-res">
+        <thead>
+          <tr>
+            <th>FDC id</th>
+            <th>Description</th>
+            <th>Additional description</th>
+            <th>Category</th>
+            <th>Protein, g</th>
+            <th>Fats, g</th>
+            <th>Carbs, g</th>
+            <th>Calories, kcal</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for hit in hit_list %}
+            <tr>
+              <td>{{ hit[0] }}</td>
+              <td>{{ hit[1] }}</td>
+              <td>{{ hit[2] }}</td>
+              <td>{{ hit[3] }}</td>
+              <td>{{ hit[4] }}</td>
+              <td>{{ hit[5] }}</td>
+              <td>{{ hit[6] }}</td>
+              <td>{{ hit[7] }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      
+{% endblock %}

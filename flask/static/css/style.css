@@ -1,0 +1,97 @@
+/* #000137 #02055A #02198B #253DA1 #B0DBF1*/
+
+/* Style the navigation bar */
+.navbar {
+    background-color: #000137;
+    margin-bottom: 15px;
+}
+
+a {
+    color: whitesmoke;
+}
+
+.navbar-container {
+    max-width: 1150px;
+    min-height: 40px;
+    line-height: 40px;
+    padding: 0 3%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-container ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 2%;
+    width: 70%;
+}
+
+.navbar-container a {
+    padding: 0 5px;
+    color: whitesmoke;
+}
+
+.navbar-container li:hover {
+    background-color: #02198B;
+}
+
+body {
+    background-color: #02198B;
+    color: whitesmoke;
+}
+
+.body-container {
+    max-width: 1150px;
+    min-height: 1000px;
+    padding: 0 3%;
+    margin: 0 auto;
+}
+
+.table-search-res th{
+    text-align: left;
+}
+.table-search-res th:nth-child(1){ /*fdc id*/
+    width: 7%;
+}
+.table-search-res th:nth-child(2){ /*desc*/
+    width: 25%;
+}
+.table-search-res th:nth-child(3){ /*add desc*/
+    width: 35%;
+}
+.table-search-res th:nth-child(4){ /*category*/
+    width: 13%;
+}
+.table-search-res th:nth-child(5){ /*protein*/
+    width: 5%;
+}
+.table-search-res th:nth-child(6){ /*fats*/
+    width: 5%;
+}
+.table-search-res th:nth-child(7){ /*carbs*/
+    width: 5%;
+}
+.table-search-res th:nth-child(8){ /*calories*/
+    width: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-container {
+        font-size: 16px;
+    }
+    .body-container {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .navbar-container {
+        font-size: 30px;
+    }
+    .body-container {
+        font-size: 18px;
+    }
+}
